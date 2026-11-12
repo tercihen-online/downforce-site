@@ -1,0 +1,48 @@
+/* Downforce legal pages: plain reading pages in the app's type, light and dark. */
+:root {
+  --bg: #F1F0F4; --surf: #FFFFFF; --ink: #1A1826; --mute: #55526A; --faint: #8A879E; --accent: #D9271A; --rule: #E2E0EA;
+  color-scheme: light dark;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0A090C; --surf: #16151C; --ink: #F4F2FA; --mute: #B8B5C8; --faint: #7F7C92; --accent: #FF5A48; --rule: #26242F; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.65 "Hanken Grotesk", system-ui, -apple-system, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 20px 64px; }
+header { margin-bottom: 28px; }
+.brand { font-weight: 800; letter-spacing: .02em; color: var(--accent); text-decoration: none; }
+.brand .mark { display: block; height: 34px; width: auto; }
+h1 { font-weight: 200; font-size: 38px; line-height: 1.15; letter-spacing: -.02em; margin: 14px 0 6px; }
+.meta { color: var(--faint); font-size: 14px; }
+h2 { font-weight: 800; font-size: 19px; margin: 36px 0 8px; }
+p, li { color: var(--ink); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+table { width: 100%; border-collapse: collapse; background: var(--surf); border-radius: 14px; overflow: hidden; font-size: 14.5px; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; }
+tr + tr td, tr + tr th { border-top: 1px solid var(--rule); }
+th { font-weight: 700; color: var(--mute); font-size: 13px; }
+.box { background: var(--surf); border-radius: 14px; padding: 16px 18px; }
+a { color: var(--accent); }
+nav { margin-top: 48px; display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 14px; }
+.todo { background: #FFE9A8; color: #3A2A00; padding: 0 4px; border-radius: 4px; }
+
+/* Home page */
+.home main { max-width: 960px; }
+.hero { margin: 8px 0 22px; }
+.hero .brand .mark { height: 44px; }
+.hero h1 { font-weight: 800; font-size: clamp(32px, 6vw, 52px); letter-spacing: -.025em; line-height: 1.08; margin: 22px 0 12px; max-width: 14ch; }
+.lede { font-size: 18px; color: var(--mute); max-width: 52ch; margin: 0; }
+.soon { display: inline-flex; align-items: center; gap: 8px; margin: 18px 0 0; padding: 7px 14px; border-radius: 999px; background: var(--surf); font-weight: 700; font-size: 14px; }
+.soon .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+.cover { margin: 0 0 36px; }
+.cover img { display: block; width: 100%; height: auto; border-radius: 18px; }
+.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+.features article { background: var(--surf); border-radius: 16px; padding: 18px 20px; }
+.features h2 { margin: 0 0 6px; font-size: 18px; }
+.features p { margin: 0; color: var(--mute); font-size: 15px; line-height: 1.55; }
+.support { margin-top: 40px; }
+.support h2 { margin-top: 0; }
+footer { margin-top: 40px; border-top: 1px solid var(--rule); padding-top: 4px; }
+footer nav { margin-top: 16px; }
+.fine { color: var(--faint); font-size: 13px; margin-top: 14px; }
