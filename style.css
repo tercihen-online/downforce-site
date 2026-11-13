@@ -26,23 +26,3 @@ th { font-weight: 700; color: var(--mute); font-size: 13px; }
 a { color: var(--accent); }
 nav { margin-top: 48px; display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 14px; }
 .todo { background: #FFE9A8; color: #3A2A00; padding: 0 4px; border-radius: 4px; }
-
-/* Home page */
-.home main { max-width: 960px; }
-.hero { margin: 8px 0 22px; }
-.hero .brand .mark { height: 44px; }
-.hero h1 { font-weight: 800; font-size: clamp(32px, 6vw, 52px); letter-spacing: -.025em; line-height: 1.08; margin: 22px 0 12px; max-width: 14ch; }
-.lede { font-size: 18px; color: var(--mute); max-width: 52ch; margin: 0; }
-.soon { display: inline-flex; align-items: center; gap: 8px; margin: 18px 0 0; padding: 7px 14px; border-radius: 999px; background: var(--surf); font-weight: 700; font-size: 14px; }
-.soon .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
-.cover { margin: 0 0 36px; }
-.cover img { display: block; width: 100%; height: auto; border-radius: 18px; }
-.features { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
-.features article { background: var(--surf); border-radius: 16px; padding: 18px 20px; }
-.features h2 { margin: 0 0 6px; font-size: 18px; }
-.features p { margin: 0; color: var(--mute); font-size: 15px; line-height: 1.55; }
-.support { margin-top: 40px; }
-.support h2 { margin-top: 0; }
-footer { margin-top: 40px; border-top: 1px solid var(--rule); padding-top: 4px; }
-footer nav { margin-top: 16px; }
-.fine { color: var(--faint); font-size: 13px; margin-top: 14px; }
